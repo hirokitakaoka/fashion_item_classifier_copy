@@ -43,7 +43,7 @@ class Net(nn.Module):
 net = Net()
 
 net.load_state_dict(torch.load(
-  "model_cnn.pth", map_loaction=torch.device("cpu")
+  "model_cnn.pth", map_location=torch.device("cpu")
   ))
 
 def predict(img):
